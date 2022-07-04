@@ -1,4 +1,5 @@
-# Bytebank
+Bytebank
+Projeto criado seguindo o curso de Angular: explorando o framework do Alura
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
 
