@@ -10,16 +10,15 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class NovaTransferenciaComponent {
 
-  @Output() aoTransferir = new EventEmitter<any>();
-
   valor: number;
   destino: number;
+
 
   constructor(private service: TransferenciaService, private router: Router) {}
 
   transferir() {
     console.log('Solicitado nova transferencia');
-    const valorEmitir: Transferencia = {valor: this.valor, destino: this.destino};
+    const valorEmitir: Transferencia = {valor: this.valor, destino: this.destino, data: new Date()};
 
     this.service.adicionar(valorEmitir).subscribe(resultado => {
       console.log(resultado);
